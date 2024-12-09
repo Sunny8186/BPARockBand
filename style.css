@@ -17,7 +17,7 @@
     box-shadow: 0px 10px 40px rgb(0, 0, 0);
 }
 
-.merchlink {
+.merchlink, .homelink {
     font-size: 20px;
     font-weight: 500;
     color: black;
@@ -29,4 +29,29 @@
     font-size: 300%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #F5B73C;
+}
+
+.home {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 300%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #923cf5;
+    background-color:#F5B73C;
+}
+
+.homenav{
+    background-color:#923cf5;
+    box-shadow: 0px 10px 40px rgb(0, 0, 0); 
+}
+
+.homebutton{
+    background-color:#923cf5;
+    color: #F5B73C;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.homebutton:hover{
+    background-color:black;
+    color:#F5B73C;
 }
