@@ -23,6 +23,12 @@
     color: black;
 }
 
+.tourlink{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
 .store {
     text-align: center;
     margin-top: 10%;
@@ -76,7 +82,7 @@
     color:white;
 }
 
-.member-photo{
+.member-photo, .merch-photo{
     height: 200px;
     width: 200px;
 }
