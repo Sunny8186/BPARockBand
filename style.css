@@ -75,3 +75,29 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:white;
 }
+
+.member-photo{
+    height: 200px;
+    width: 200px;
+}
+
+.tournav{
+    background-color: #0f990b;
+    box-shadow: 0px 10px 40px rgb(0, 0, 0);
+}
+
+.tours{
+    background-color: #923cf5;
+}
+
+.tour-title{
+    color:white;
+}
+
+.tour-desc{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 300%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #F5B73C;
+}
