@@ -65,6 +65,10 @@
     color: #923cf5;
 }
 
+.album{
+    height: 800px;
+    width: 800px;
+}
 .bio{
     background-color:#0f990b;
 }
