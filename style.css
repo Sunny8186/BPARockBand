@@ -89,6 +89,7 @@
 .member-photo, .merch-photo{
     height: 200px;
     width: 200px;
+    padding: 5px;
 }
 
 .tournav{
