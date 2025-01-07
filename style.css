@@ -42,19 +42,19 @@
 }
 
 .homenav{
-    background-color:#923cf5;
+    background-color:#C62B3D;
     box-shadow: 0px 10px 40px rgb(0, 0, 0); 
 }
 
 .homebutton{
-    background-color:#923cf5;
+    background-color:#1E1F21;
     color: #F5B73C;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .homebutton:hover{
-    background-color:black;
-    color:#F5B73C;
+    background-color:#C62B3D;
+    color:#1E1F21;
 }
 
 .description{
@@ -62,7 +62,7 @@
     margin-top: 10%;
     font-size: 300%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #923cf5;
+    color: #1E1F21;
 }
 
 .album{
@@ -70,11 +70,11 @@
     width: 800px;
 }
 .bio{
-    background-color:#0f990b;
+    background-color:#C62B3D;
 }
 
 .bionav{
-    background-color:white;
+    background-color:#F5B73C;
     box-shadow: 0px 10px 40px rgb(0, 0, 0); 
 }
 
@@ -93,16 +93,16 @@
 }
 
 .tournav{
-    background-color: #0f990b;
+    background-color: white;
     box-shadow: 0px 10px 40px rgb(0, 0, 0);
 }
 
 .tours{
-    background-color: #923cf5;
+    background-color: #3A3B3D;
 }
 
-.tour-title{
-    color:white;
+.tour-title, .tourlink{
+    color:#3A3B3D;
 }
 
 .tour-desc{
