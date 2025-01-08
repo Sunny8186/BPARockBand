@@ -32,7 +32,7 @@
 .store {
     text-align: center;
     margin-top: 10%;
-    font-size: 300%;
+    font-size: 500%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #F5B73C;
 }
@@ -111,4 +111,28 @@
     font-size: 300%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #F5B73C;
+}
+
+.merchTitle{
+    text-align: center;
+    font-size: 200%;
+    color: lightgray;
+    font-style: italic;
+    font-family:monospace;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+ul.centered-nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: center; 
+  }
+
+#merchnav {
+    color: lightgray;
+}
+
+#merchnav:hover {
+    color: #C62B3D;
 }
