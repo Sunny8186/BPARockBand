@@ -31,7 +31,7 @@
 
 .store {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 300%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #F5B73C;
@@ -143,4 +143,8 @@ ul.centered-nav{
     font-size: 700%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #F5B73C;
+}
+
+#price {
+    font-size:xx-large;
 }
