@@ -48,6 +48,14 @@
                 <img src="" class="merch-photo">
                   <h1 class="store">Black Classic Hoodie</h1>
                   <h1 class="store" id="price">$15.99</h1>
+
+                  <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-1')">Select Size</button>
+                    <div class="size-options" id="size-options-1">
+                        <button class="btn btn-secondary">Small</button>
+                        <button class="btn btn-secondary">Medium</button>
+                        <button class="btn btn-secondary">Large</button>
+                    </div>
+
               </div>
               <div class="col-md-4">
                 <img src="" class="merch-photo">
@@ -163,5 +171,17 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="app.js"></script>
+        <script>
+          // JavaScript function to toggle size options visibility
+          function toggleSizeOptions(id) {
+              const sizeOptions = document.getElementById(id);
+              // Toggle the visibility of the size options
+              if (sizeOptions.style.display === "none" || sizeOptions.style.display === "") {
+                  sizeOptions.style.display = "block";
+              } else {
+                  sizeOptions.style.display = "none";
+              }
+          }
+      </script>
     </body>
 </html>

@@ -148,3 +148,12 @@ ul.centered-nav{
 #price {
     font-size:xx-large;
 }
+
+.size-options {
+    display: none; /* Initially hide size options */
+    margin-top: 10px;
+}
+
+.size-options button {
+    margin-right: 10px;
+}
