@@ -11,10 +11,18 @@
     font-style: italic;
     
 }
+.home-title{
+    color: white;
+}
 
 .merchnav {
     background-color: #F5B73C;
     box-shadow: 0px 10px 40px rgb(0, 0, 0);
+}
+
+#navbar-toggler-icon-index{
+    color:white; 
+    border-color:white;
 }
 
 .merchlink, .homelink, .biolink {
@@ -29,6 +37,9 @@
     color: white;
 }
 
+.index-homelink{
+    color: white;
+}
 .store {
     text-align: center;
     margin-top: 5%;
@@ -44,6 +55,8 @@
 .homenav{
     background-color:#C62B3D;
     box-shadow: 0px 10px 40px rgb(0, 0, 0); 
+    
+    
 }
 
 .homebutton{
@@ -91,7 +104,11 @@
     width: 200px;
     padding: 5px;
 }
-
+.member-photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .tournav{
     background-color: white;
     box-shadow: 0px 10px 40px rgb(0, 0, 0);
