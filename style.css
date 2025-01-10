@@ -136,7 +136,7 @@
     color: lightgray;
     font-style: italic;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top: 15%;
+    padding-top: 10%;
     padding-bottom: 5%;
 }
 
@@ -156,7 +156,7 @@ ul.centered-nav{
 
 .merchNavTitle {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 700%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #F5B73C;
@@ -167,10 +167,14 @@ ul.centered-nav{
 }
 
 .size-options {
-    display: none; /* Initially hide size options */
+    display: none; 
     margin-top: 10px;
 }
 
 .size-options button {
     margin-right: 10px;
+}
+
+.col-md-4 {
+    margin-bottom: 2%;
 }

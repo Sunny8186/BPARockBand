@@ -41,6 +41,14 @@
             </div>
 
             <hr>
+
+            <section id="shopping-cart itemSets">
+              <div class="shop">
+                <h2 class="cart" id="shop-cart">Shopping Cart</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button onclick="checkout()" class="cartCheck"><a href="/Payment.html">Checkout</a> </button>
+            </div></section>
             
             <!--First Hoodie-->
             <div class="row">
@@ -50,11 +58,15 @@
                   <h1 class="store">Black Classic Hoodie</h1>
                   <h1 class="store" id="price">$15.99</h1>
 
-                  <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-1')">Select Size</button>
+                  <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-1')">Select Size</button>
                   <div class="size-options" id="size-options-1">
                     <button class="btn btn-secondary">Small</button>
                     <button class="btn btn-secondary">Medium</button>
                     <button class="btn btn-secondary">Large</button>
+                  </div>
+
+                  <div class="text-end">
+                    <a href="#sliders" class="btn btn-outline-primary" onclick="addToCart(1)">Order Now</a>
                   </div>
 
               </div>
@@ -65,7 +77,7 @@
                 <h1 class="store">White Classic Hoodie</h1>
                 <h1 class="store" id="price">$15.99</h1>
 
-                <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-2')">Select Size</button>
+                <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-2')">Select Size</button>
                 <div class="size-options" id="size-options-2">
                   <button class="btn btn-secondary">Small</button>
                   <button class="btn btn-secondary">Medium</button>
@@ -80,7 +92,7 @@
                 <h1 class="store">Red Classic Hoodie</h1>
                 <h1 class="store" id="price">$15.99</h1>
 
-                <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-3')">Select Size</button>
+                <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-3')">Select Size</button>
                 <div class="size-options" id="size-options-3">
                   <button class="btn btn-secondary">Small</button>
                   <button class="btn btn-secondary">Medium</button>
@@ -97,7 +109,7 @@
                 <h1 class="store">Yellow and Grey Fleece Hoodie</h1>
                 <h1 class="store" id="price">$18.00</h1>
                 
-                <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-4')">Select Size</button>
+                <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-4')">Select Size</button>
                 <div class="size-options" id="size-options-4">
                   <button class="btn btn-secondary">Small</button>
                   <button class="btn btn-secondary">Medium</button>
@@ -112,7 +124,7 @@
                 <h1 class="store">Red Pullover Hoodie</h1>
                 <h1 class="store" id="price">$12.99</h1>
 
-                <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-5')">Select Size</button>
+                <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-5')">Select Size</button>
                 <div class="size-options" id="size-options-5">
                   <button class="btn btn-secondary">Small</button>
                   <button class="btn btn-secondary">Medium</button>
@@ -127,7 +139,7 @@
                 <h1 class="store">Yellow and Grey Classic Hoodie</h1>
                 <h1 class="store" id="price">$15.99</h1>
                 
-                <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-6')">Select Size</button>
+                <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-6')">Select Size</button>
                 <div class="size-options" id="size-options-6">
                   <button class="btn btn-secondary">Small</button>
                   <button class="btn btn-secondary">Medium</button>
@@ -147,7 +159,7 @@
                   <h1 class="store">Black Crew Neck T-Shirt</h1>
                   <h1 class="store" id="price">$9.99</h1>
 
-                  <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-7')">Select Size</button>
+                  <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-7')">Select Size</button>
                   <div class="size-options" id="size-options-7">
                     <button class="btn btn-secondary">Small</button>
                     <button class="btn btn-secondary">Medium</button>
@@ -162,7 +174,7 @@
                 <h1 class="store">Red Crew Neck T-Shirt</h1>
                 <h1 class="store" id="price">$9.99</h1>
 
-                <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-8')">Select Size</button>
+                <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-8')">Select Size</button>
                   <div class="size-options" id="size-options-8">
                     <button class="btn btn-secondary">Small</button>
                     <button class="btn btn-secondary">Medium</button>
@@ -171,13 +183,13 @@
 
               </div>
 
-              <!--Thirsd Shirt-->
+              <!--Third Shirt-->
               <div class="col-md-4">
                 <img src="img/Screenshot 2025-01-08 at 10.22.31 AM.png" class="merch-photo">
                 <h1 class="store">Grey Graphic T-shirt</h1>
                 <h1 class="store" id="price">$11.00</h1>
 
-                <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-9')">Select Size</button>
+                <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-9')">Select Size</button>
                   <div class="size-options" id="size-options-9">
                     <button class="btn btn-secondary">Small</button>
                     <button class="btn btn-secondary">Medium</button>
@@ -197,7 +209,7 @@
                     <h1 class="store">Black Stainless Steel Water Bottle</h1>
                     <h1 class="store" id="price">$12.99</h1>
 
-                    <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-10')">Select Size</button>
+                    <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-10')">Select Size</button>
                   <div class="size-options" id="size-options-10">
                     <button class="btn btn-secondary">Small</button>
                     <button class="btn btn-secondary">Medium</button>
@@ -212,7 +224,7 @@
                   <h1 class="store">White Stainless Steel Water Bottle</h1>
                   <h1 class="store" id="price">$12.99</h1>
 
-                  <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-11')">Select Size</button>
+                  <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-11')">Select Size</button>
                   <div class="size-options" id="size-options-11">
                     <button class="btn btn-secondary">Small</button>
                     <button class="btn btn-secondary">Medium</button>
@@ -227,7 +239,7 @@
                   <h1 class="store">Aluminum Water Bottle</h1>
                   <h1 class="store" id="price">$14.00</h1>
 
-                  <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-12')">Select Size</button>
+                  <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-12')">Select Size</button>
                   <div class="size-options" id="size-options-12">
                     <button class="btn btn-secondary">Small</button>
                     <button class="btn btn-secondary">Medium</button>
@@ -247,7 +259,7 @@
                       <h1 class="store">Steel Key Ring</h1>
                       <h1 class="store" id="price">$3.99</h1>
 
-                      <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-13')">Select Size</button>
+                      <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-13')">Select Size</button>
                       <div class="size-options" id="size-options-13">
                         <button class="btn btn-secondary">Small</button>
                         <button class="btn btn-secondary">Medium</button>
@@ -262,7 +274,7 @@
                     <h1 class="store">Rubber Keychain Clasp</h1>
                     <h1 class="store" id="price">$2.50</h1>
 
-                    <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-14')">Select Size</button>
+                    <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-14')">Select Size</button>
                     <div class="size-options" id="size-options-14">
                       <button class="btn btn-secondary">Small</button>
                       <button class="btn btn-secondary">Medium</button>
@@ -277,7 +289,7 @@
                     <h1 class="store">Rubber Keychain Fob</h1>
                     <h1 class="store" id="price">$2.99</h1>
 
-                    <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-15')">Select Size</button>
+                    <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-15')">Select Size</button>
                     <div class="size-options" id="size-options-15">
                       <button class="btn btn-secondary">Small</button>
                       <button class="btn btn-secondary">Medium</button>
@@ -297,7 +309,7 @@
                         <h1 class="store">Black and Red Backpack</h1>
                         <h1 class="store" id="price">$25.99</h1>
 
-                        <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-16')">Select Size</button>
+                        <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-16')">Select Size</button>
                         <div class="size-options" id="size-options-16">
                           <button class="btn btn-secondary">Small</button>
                           <button class="btn btn-secondary">Medium</button>
@@ -312,7 +324,7 @@
                       <h1 class="store">Graphic Drawstring Bag</h1>
                       <h1 class="store" id="price">$15.99</h1>
 
-                      <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-17')">Select Size</button>
+                      <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-17')">Select Size</button>
                       <div class="size-options" id="size-options-17">
                         <button class="btn btn-secondary">Small</button>
                         <button class="btn btn-secondary">Medium</button>
@@ -327,7 +339,7 @@
                       <h1 class="store">Black Tote Bag</h1>
                       <h1 class="store" id="price">$19.99</h1>
 
-                      <button class="btn btn-primary size-btn" onclick="toggleSizeOptions('size-options-18')">Select Size</button>
+                      <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-18')">Select Size</button>
                       <div class="size-options" id="size-options-18">
                         <button class="btn btn-secondary">Small</button>
                         <button class="btn btn-secondary">Medium</button>
@@ -356,5 +368,100 @@
               }
           }
       </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+ const cartLink = document.querySelector('.cart');
+ cartLink.addEventListener('click', function(event) {
+     event.preventDefault();
+     // Show the shopping cart
+     showShoppingCart();
+ });
+});
+
+function showShoppingCart() {
+ const cartSection = document.getElementById('shopping-cart');
+ if (cartSection.style.display === 'none' || cartSection.style.display === '') {
+     cartSection.style.display = 'block';
+     updateCart();
+ } else {
+     cartSection.style.display = 'none';
+ }
+}
+
+const menuItems = [
+ { id: 1, name: '', price: 15.99 },
+ { id: 2, name: '', price: 15.99 },
+ { id: 3, name: '', price: 15.99 },
+ { id: 4, name: '', price: 18.00 },
+ { id: 5, name: '', price: 12.99 },
+ { id: 6, name: '', price: 15.99 },
+ { id: 7, name: '', price: 9.99 },
+ { id: 8, name: '', price: 9.99 },
+ { id: 9, name: '', price: 11.00 },
+ { id: 10, name: '', price: 12.99 },
+ { id: 11, name: '', price: 12.99 },
+ { id: 12, name: '', price: 14.00 },
+ { id: 13, name: '', price: 3.99 },
+ { id: 14, name: '', price: 2.50 },
+ { id: 15, name: '', price: 2.99 },
+ { id: 16, name: '', price: 25.99 },
+ { id: 17, name: '', price: 15.99 },
+ { id: 18, name: '', price: 19.99 },
+];
+
+const cart = [];
+
+function addToCart(itemId) {
+ const selectedItem = menuItems.find(item => item.id === itemId);
+ if (selectedItem) {
+     cart.push(selectedItem);
+     updateCart();
+ }
+}
+
+function removeFromCart(itemId) {
+ const index = cart.findIndex(item => item.id === itemId);
+ if (index !== -1) {
+     cart.splice(index, 1);
+     updateCart();
+ }
+}
+
+function increaseQuantity(itemId) {
+ const selectedItem = menuItems.find(item => item.id === itemId);
+ if (selectedItem) {
+     cart.push(selectedItem);
+     updateCart();
+ }
+}
+
+function updateCart() {
+ const cartItemsElement = document.getElementById('cart-items');
+ const cartTotalElement = document.getElementById('cart-total');
+
+ // Clear the cart
+ cartItemsElement.innerHTML = '';
+
+ // Populate the cart
+ cart.forEach(item => {
+     const li = document.createElement('li');
+     li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+     const removeButton = document.createElement('button');
+     removeButton.textContent = 'Remove';
+     removeButton.onclick = () => removeFromCart(item.id);
+     li.appendChild(removeButton);
+     const increaseButton = document.createElement('button');
+     increaseButton.textContent = 'Add another';
+     increaseButton.onclick = () => increaseQuantity(item.id);
+     li.appendChild(increaseButton);
+     cartItemsElement.appendChild(li);
+ });
+
+ // Calculate and display the total
+ const total = cart.reduce((acc, item) => acc + item.price, 0);
+ cartTotalElement.textContent = total.toFixed(2);
+}
+     </script>
+     
     </body>
 </html>
