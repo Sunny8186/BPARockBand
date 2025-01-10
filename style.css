@@ -146,7 +146,7 @@ ul.centered-nav{
     justify-content: center; 
   }
 
-#merchnav {
+#merchnav, .shop {
     color: lightgray;
 }
 
