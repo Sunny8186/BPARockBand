@@ -57,7 +57,7 @@
               <div class="col-md-4">
                 <img src="img/black_hoodie.png" class="merch-photo bordered-img">
                   <h1 class="store">Black Classic Hoodie</h1>
-                  <h1 class="store" id="price">$15.99</h1>
+                  <h1 class="store" id="price">$25.99</h1>
 
                   <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-1')">Select Size</button>
                   <div class="size-options" id="size-options-1">
@@ -76,7 +76,7 @@
               <div class="col-md-4">
                 <img src="img/white_hoodie.png" class="merch-photo bordered-img">
                 <h1 class="store">White Classic Hoodie</h1>
-                <h1 class="store" id="price">$15.99</h1>
+                <h1 class="store" id="price">$25.99</h1>
 
                 <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-2')">Select Size</button>
                 <div class="size-options" id="size-options-2">
@@ -95,7 +95,7 @@
               <div class="col-md-4">
                 <img src="img/red_hoodie.png" class="merch-photo bordered-img">
                 <h1 class="store">Red Classic Hoodie</h1>
-                <h1 class="store" id="price">$15.99</h1>
+                <h1 class="store" id="price">$25.99</h1>
 
                 <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-3')">Select Size</button>
                 <div class="size-options" id="size-options-3">
@@ -116,7 +116,7 @@
               <div class="col-md-4">
                 <img src="img/yellow_and_dark_grey_hoodie.png" class="merch-photo bordered-img">
                 <h1 class="store">Yellow and Grey Fleece Hoodie</h1>
-                <h1 class="store" id="price">$18.00</h1>
+                <h1 class="store" id="price">$28.00</h1>
                 
                 <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-4')">Select Size</button>
                 <div class="size-options" id="size-options-4">
@@ -135,7 +135,7 @@
               <div class="col-md-4">
                 <img src="img/red_pullover.png" class="merch-photo bordered-img">
                 <h1 class="store">Red Pullover Hoodie</h1>
-                <h1 class="store" id="price">$12.99</h1>
+                <h1 class="store" id="price">$22.99</h1>
 
                 <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-5')">Select Size</button>
                 <div class="size-options" id="size-options-5">
@@ -154,7 +154,7 @@
               <div class="col-md-4">
                 <img src="img/yellow_and_light_grey_hoodie.png" class="merch-photo bordered-img">
                 <h1 class="store">Yellow and Grey Classic Hoodie</h1>
-                <h1 class="store" id="price">$15.99</h1>
+                <h1 class="store" id="price">$25.99</h1>
                 
                 <button class="btn btn-light size-btn" onclick="toggleSizeOptions('size-options-6')">Select Size</button>
                 <div class="size-options" id="size-options-6">
@@ -418,9 +418,30 @@
                     </div>
                   </div>
 
+                  <hr>
+
+                  <h1 class = "signUp">SIGN UP TO RECEIVE UPDATES</h1>
+                  
+                  <div class="theform">
+                    <form action="/action_page.php">
+                        <br>
+                        
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                        <input type="text" id="email" name="email" placeholder="Email Address">
+                        <input type="text" id="phone" name="phone" placeholder="+1 Phone Number">
+            
+                        <br>
+
+                        <input type="submit" value="Submit">
+                    
+                      </form>
+                    </div>
+
+                    <hr>
 
             <div class="row">
-                <h1 class="store">Prices are subject to change without notice.</h1>
+                <h1 class="store" id = "smaller">Prices are subject to change without notice.</h1>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -458,12 +479,12 @@ function showShoppingCart() {
 }
 
 const menuItems = [
- { id: 1, name: 'Black Classic Hoodie', price: 15.99 },
- { id: 2, name: 'White Classic Hoodie', price: 15.99 },
- { id: 3, name: 'Red Classic Hoodie', price: 15.99 },
- { id: 4, name: 'Yellow and Grey Fleece Hoodie', price: 18.00 },
- { id: 5, name: 'Red Pullover Hoodie', price: 12.99 },
- { id: 6, name: 'Yellow and Grey Classic Hoodie', price: 15.99 },
+ { id: 1, name: 'Black Classic Hoodie', price: 25.99 },
+ { id: 2, name: 'White Classic Hoodie', price: 25.99 },
+ { id: 3, name: 'Red Classic Hoodie', price: 25.99 },
+ { id: 4, name: 'Yellow and Grey Fleece Hoodie', price: 28.00 },
+ { id: 5, name: 'Red Pullover Hoodie', price: 22.99 },
+ { id: 6, name: 'Yellow and Grey Classic Hoodie', price: 25.99 },
  { id: 7, name: 'Black Crew Neck T-Shirt', price: 9.99 },
  { id: 8, name: 'Red Crew Neck T-Shirt', price: 9.99 },
  { id: 9, name: 'Grey Graphic T-Shirt', price: 11.00 },
@@ -556,9 +577,31 @@ function updateCart() {
 
   function checkout() {
     alert("Proceeding to Checkout");
-    // Implement checkout functionality here
   }
   </script>
+  <script>
+    function submitForm() {
+        var firstName = document.getElementById("firstName").value;
+        var lastName = document.getElementById("lastName").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+
+        if (firstName && lastName && email && phone && message) {
+            document.getElementById("submitButton").classList.remove("btn-secondary");
+            document.getElementById("submitButton").classList.add("btn-primary");
+            clearForm2();
+
+        } else {
+            alert("Please fill in all fields.");
+        }
+    }
+    
+    function clearForm2() {
+        document.getElementById("contactForm").reset();
+        document.getElementById("submitButton").classList.remove("btn-primary");
+        document.getElementById("submitButton").classList.add("btn-secondary");
+    }
+</script>
 
     </body>
 </html>
