@@ -55,8 +55,6 @@
 .homenav{
     background-color:#C62B3D;
     box-shadow: 0px 10px 40px rgb(0, 0, 0); 
-    
-    
 }
 
 .homebutton{
@@ -69,7 +67,31 @@
     background-color:#C62B3D;
     color:#1E1F21;
 }
+.band-header{
+    color:white;
 
+}
+.page-header{
+    font-style: italic;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 500%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.band-name{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 200%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+}
+.band-member{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 100%;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color:white;
+}
 .description{
     text-align: center;
     margin-top: 10%;
@@ -90,14 +112,23 @@
     background-color:#F5B73C;
     box-shadow: 0px 10px 40px rgb(0, 0, 0); 
 }
-
-.band{
+.tour-header{
+    font-size: 500%;
+}
+th{
+    
     text-align: center;
     margin-top: 10%;
     font-size: 300%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:white;
 }
+td{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 150%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 
 .member-photo, .merch-photo{
     height: 200px;
@@ -128,7 +159,7 @@
 .tour-desc{
     text-align: center;
     margin-top: 10%;
-    font-size: 300%;
+    
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #F5B73C;
 }
@@ -187,10 +218,34 @@ ul.centered-nav{
     border-radius: 10px; 
   }
 
-#shop-cart {
-    color: black;
+
+#shop-cart{
+    color: #1E1F21;
+    padding-top:2% ;
+    left: 50%;
+    right: 50%;
+}
+#cart-items{
+    color:#3A3B3D
 }
 
+.cart-total{
+    color:#1E1F21;
+    text-align: center;
+}
+.cart{
+   text-align: center;
+}
+.shop{
+    background-color: #F5B73C;
+    border-radius: 2%;
+    border-color: #F5B73C;
+    border-width: 5px;
+    
+}
+.cartCheck{
+    align-self: center;
+}
 p {
     color: lightgray;
 }
