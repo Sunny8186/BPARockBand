@@ -109,6 +109,8 @@
 .album{
     height: 800px;
     width: 800px;
+    margin-left:auto;
+    margin-right: auto;
 }
 .bio{
     background-color:#C62B3D;
@@ -228,8 +230,7 @@ ul.centered-nav{
 #shop-cart{
     color: #1E1F21;
     padding-top:2% ;
-    left: 50%;
-    right: 50%;
+    
 }
 #cart-items{
     color:#3A3B3D
@@ -237,11 +238,9 @@ ul.centered-nav{
 
 .cart-total{
     color:#1E1F21;
-    text-align: center;
+   
 }
-.cart{
-   text-align: center;
-}
+
 .shop{
     background-color: #F5B73C;
     border-radius: 2%;
@@ -249,9 +248,7 @@ ul.centered-nav{
     border-width: 5px;
     
 }
-.cartCheck{
-    align-self: center;
-}
+
 p {
     color: lightgray;
 }
