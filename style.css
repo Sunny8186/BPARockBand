@@ -101,7 +101,7 @@
 .description{
     text-align: center;
     margin-top: 10%;
-    font-size: 300%;
+    font-size: 200%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #1E1F21;
 }
@@ -241,12 +241,15 @@ ul.centered-nav{
    
 }
 
-.shop{
+#shop{
     background-color: #F5B73C;
     border-radius: 2%;
     border-color: #F5B73C;
     border-width: 5px;
-    
+    margin:0;
+    padding: 0;
+    width: 100%;
+
 }
 
 p {
