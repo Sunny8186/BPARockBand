@@ -1,7 +1,13 @@
+/*Merch Page Styling*/
 .merch {
     background-color: #3A3B3D;
 }
+.merchnav {
+    background-color: #F5B73C;
+    box-shadow: 0px 10px 40px rgb(0, 0, 0);
+}
 
+/*General*/
 .title {
     font-size: 50px;
     margin-left: 5%;
@@ -11,31 +17,31 @@
     font-style: italic;
     
 }
-.home-title{
-    color: white;
-}
-
-.merchnav {
-    background-color: #F5B73C;
-    box-shadow: 0px 10px 40px rgb(0, 0, 0);
-}
-
-#navbar-toggler-icon-index{
-    color:white; 
-    border-color:white;
-}
-
 .merchlink, .homelink, .biolink {
     font-size: 20px;
     font-weight: 500;
     color: black;
 }
+/*index*/
+.home-title{
+    color: white;
+}
+#navbar-toggler-icon-index{
+    color:white; 
+    border-color:white;
+}
 
+/*tours*/
 .tourlink{
     font-size: 20px;
     font-weight: 500;
     color: white;
 }
+
+/*bio*/
+
+
+
 
 .index-homelink{
     color: white;
